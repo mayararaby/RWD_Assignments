@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        @font-face {
+            font-family: "myFont";
+            src: url(../RobotoCondensed-Light.ttf);
+        }
+        
+        html {
+            height: 100%;
+        }
+        
+        body {
+            height: 98%;
+        }
+        
+        * {
+            font-family: 'myFont';
+        }
+        
+        .col-1 {
+            width: 6.25%;
+        }
+        
+        .col-2 {
+            width: 12.5%;
+        }
+        
+        .col-3 {
+            width: 18.75%;
+        }
+        
+        .col-4 {
+            width: 25%;
+        }
+        
+        .col-5 {
+            width: 31.25%;
+        }
+        
+        .col-6 {
+            width: 37.5%;
+        }
+        
+        .col-7 {
+            width: 43.75%;
+        }
+        
+        .col-8 {
+            width: 50%;
+        }
+        
+        .col-9 {
+            width: 56.25%;
+        }
+        
+        .col-10 {
+            width: 62.5%;
+        }
+        
+        .col-11 {
+            width: 68.75%;
+        }
+        
+        .col-12 {
+            width: 75%;
+        }
+        
+        .col-13 {
+            width: 81.25%;
+        }
+        
+        .col-14 {
+            width: 87.5%;
+        }
+        
+        .col-15 {
+            width: 93.75%;
+        }
+        
+        .col-16 {
+            width: 100%;
+        }
+        
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0%;
+        }
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .header {
+            background-color: #F39C12;
+            color: #fff;
+        }
+        
+        .backGColor {
+            background-color: #F39C12;
+            color: #fff;
+        }
+        
+        .iconsStyle {
+            font-size: 20px;
+            color: #F39C12;
+            margin-right: 3%;
+        }
+        
+        .profileImg {
+            width: 100vw;
+            height: 10vh;
+            background-image: url("profile.png");
+            background-size: 100% 100%;
+            float: left;
+            border-radius: 50%;
+            margin-left: 10%;
+            margin-top: 3%;
+            margin-right: 2%;
+            width: 10%;
+        }
+        
+        footer {
+            padding: 0px !important;
+        }
+        
+        .first,
+        .second,
+        .third {
+            height: 20px;
+        }
+        
+        .first {
+            background-color: #F39C12;
+        }
+        
+        .second {
+            background-color: #C0392B;
+        }
+        
+        .third {
+            background-color: #2980B9;
+        }
+        
+        .centerheader {
+            text-align: center;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/42720e0840.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="col-16 header">
+        <div class="col-4 profileImg">
+
+        </div>
+        <div class=".col-11">
+            <aside style="text-align: left; margin-left: 2%;">
+                <h1 style="padding-top: 2%;">
+                    ANDREW HLOOM
+                </h1>
+                <h3>
+                    Profession
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu erat vehicula, aliquam libero ut, scelerisque magna. Donec sollicitudin blandit lorem sodales lacinia.
+                </p>
+            </aside>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-8 menu">
+            <h2 class="centerheader">
+                Contact
+            </h2>
+            <p>
+                <i class="fas fa-address-card iconsStyle"></i> : Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <p>
+                <i class="fas fa-phone iconsStyle"></i> : 0111 111 111
+            </p>
+            <p>
+                <i class="fas fa-envelope-open  iconsStyle"></i> :Example@ex.com
+            </p>
+            <p>
+                <i class="fas fa-link iconsStyle"></i> :www.example.com
+            </p>
+            <h2 class="centerheader">
+                languages
+            </h2>
+            <p>
+                English
+            </p>
+            <div class="col-10" style="padding: 0px !important;">
+                <div class="col-8" style="height: 10px; background-color: #7DCEA0; padding: 0px !important;;"></div>
+                <div class="col-2" style="height: 10px; background-color: #D5D8DC ;padding: 0px !important;;"></div>
+            </div>
+            <br>
+            <p>
+                German
+            </p>
+            <div class="col-10" style="padding: 0px !important;">
+                <div class="col-5" style="height: 10px; background-color: #BB8FCE; padding: 0px !important;;"></div>
+                <div class="col-5" style="height: 10px; background-color: #D5D8DC ;padding: 0px !important;;"></div>
+            </div>
+            <br>
+            <p>
+                Spanish
+            </p>
+            <div class="col-10" style="padding: 0px !important;">
+                <div class="col-3" style="height: 10px; background-color: #CD6155; padding: 0px !important;;"></div>
+                <div class="col-7" style="height: 10px; background-color: #D5D8DC ;padding: 0px !important;;"></div>
+            </div>
+            <br>
+            <h2 class="centerheader">
+                Skills
+            </h2>
+            <p>
+                Ai
+            </p>
+            <div class="col-10" style="padding: 0px !important;">
+                <div class="col-9" style="height: 10px; background-color: #CD5C5C	; padding: 0px !important;;"></div>
+                <div class="col-1" style="height: 10px; background-color: #D5D8DC ;padding: 0px !important;;"></div>
+            </div>
+            <br>
+            <p>
+                PS
+            </p>
+            <div class="col-10" style="padding: 0px !important;">
+                <div class="col-2" style="height: 10px; background-color: #0E6655	; padding: 0px !important;;"></div>
+                <div class="col-8" style="height: 10px; background-color: #D5D8DC ;padding: 0px !important;;"></div>
+            </div>
+            <br>
+            <p>
+                CSS
+            </p>
+            <div class="col-10" style="padding: 0px !important;">
+                <div class="col-4" style="height: 10px; background-color: #1A5276; padding: 0px !important;;"></div>
+                <div class="col-6" style="height: 10px; background-color: #D5D8DC ;padding: 0px !important;;"></div>
+            </div>
+            <br>
+            <h2 class="centerheader">
+                Online info
+            </h2>
+            <div style="text-align: center;">
+                <a href="#"><i class="fab fa-facebook-f iconsStyle"></i></a>
+                <a href="#"><i class="fab fa-twitter socialIcons iconsStyle"></i></a>
+            </div>
+
+        </div>
+
+        <div class="col-8">
+            <h2 class="centerheader backGColor">
+                Achevments
+            </h2>
+            <aside>
+                <p class="alignContent">2010&nbsp;&nbsp;&nbsp;&nbsp;Lorn Project</p>
+                <p class="alignContent">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu erat vehicula, aliquam libero ut.
+                </p>
+                <p class="alignContent">2012&nbsp;&nbsp;&nbsp;&nbsp;Lorn Project</p>
+                <p class="alignContent">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu erat vehicula, aliquam libero ut.
+                </p>
+                <p class="alignContent">2015&nbsp;&nbsp;&nbsp;&nbsp;Lorn Project</p>
+                <p class="alignContent">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu erat vehicula, aliquam libero ut.
+                </p>
+            </aside>
+            <h2 class="centerheader backGColor">
+                Education
+            </h2>
+            <aside>
+                <p class="alignContent">1997-2001&nbsp;&nbsp;&nbsp;&nbsp;ABC school</p>
+                <p class="alignContent">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu erat vehicula, aliquam libero ut.
+                </p>
+                <p class="alignContent">2001-2004&nbsp;&nbsp;&nbsp;&nbsp;Ohio university</p>
+                <p class="alignContent">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu erat vehicula, aliquam libero ut.
+                </p>
+                <p class="alignContent">2004-2007&nbsp;&nbsp;&nbsp;&nbsp;ABC university</p>
+                <p class="alignContent">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu erat vehicula, aliquam libero ut.
+                </p>
+            </aside>
+            <h2 class="centerheader backGColor">
+                Work experience
+            </h2>
+            <aside>
+                <p class="alignContent">2010-2013&nbsp;&nbsp;&nbsp;&nbsp;ABC Company</p>
+                <p class="alignContent">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu erat vehicula, aliquam libero ut.
+                </p>
+                <p class="alignContent">2013-2015&nbsp;&nbsp;&nbsp;&nbsp;ZOOM Company</p>
+                <p class="alignContent">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu erat vehicula, aliquam libero ut.
+                </p>
+            </aside>
+
+        </div>
+        <footer class="col-16">
+            <div class="col-5 first"></div>
+            <div class="col-6 second"></div>
+            <div class="col-5 third"></div>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
