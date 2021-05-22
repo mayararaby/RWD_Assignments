@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "myFont";
+    src: url(RobotoCondensed-Light.ttf);
+}
+
+body {
+    font-family: 'myFont';
+    position: relative;
+}
+
+.icon {
+    font-size: 10em;
+    color: #E74C3C;
+}
+
+.bgColor {
+    background-color: #E74C3C !important
+}
+
+.shadwNav {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%)
+}
+
+.bgColorGray {
+    background-color: #EAECEE;
+}
+
+.SocialIcons {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.homeSection {
+    padding-top: 100px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
